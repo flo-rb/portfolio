@@ -21,179 +21,143 @@ body{
     color: white;
 }
 
-header {
-    margin-top: 20px;
-    width: 100%;
-    height: 80px;
-    position: relative;
-    background-color: transparent;
-    top: 0;
-    left: 0;
-    padding: 1rem 1.5rem;
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+/**header**/
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    transition: 0.2s ease;
-    z-index: 100;
-}
-
-.name {
-    font-size: 2rem;
-    color: goldenrod;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.name:hover {
-    color: wheat;
-}
-
-nav a {
-    color: white;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    transition: 0.3s ease;
-    font-weight: 300;
-}
-
-nav a:hover, nav a.active {
-    color: goldenrod;
-    border-bottom: 1.5px solid white;
-    transition: 0.5s ease;
-}
-
-.home-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-img img{
-    width: 300px;
-    height: auto;
-    border-radius: 100px;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.home-img img:hover {
-    transform: scale(1.05);
-    transition: 0.5s ease;
-}
-
-section{
-    min-height: 100vh;
-    padding: 8rem 5rem;
-}
-
-.home {
-    display: flex;
-    justify-content: center;
-    gap: 8rem;
-}
-
-.home .home-content h1 {
-    font-size: 5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-
-.home .home-content h1 span {
-    color: goldenrod;
-    font-size: 5rem;
-    font-weight: 500;
-}
-
-.home .home-content h1 span:hover {
-    color: wheat;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.home .home-content h4 {
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-
-.social-section{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;  
-}
-
-.social-icons img{
-    margin: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-}
-
-/*bg circle*/
-.social-icons a{
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1.8rem solid rgba(255, 255, 255, 0.815);
-    box-shadow: goldenrod 0px 0px 10px;
-    width: 2rem;
-    height: 2rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem;
-    transition: 0.5s ease;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2);
-    transition: 0.5s ease;
-}
-
-.social-icons a:hover {
-    transform: scale(1.2);
-    transition: 0.5s ease;
-}
-
-.cv-btn{
-    display: inline-block;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
     background-color: black;
-    color: goldenrod;
-    border: 2.5px solid white;
-    border-radius: 50px;
-    padding: 0.75rem 1.5rem; /*h/l*/
-    letter-spacing: 0.2rem;
-    font-size: 1rem;
-    margin: 1rem 0;
+    height: 10vh;
 }
 
-.cv-btn a{
-    color: blue;
+.name{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
 }
-.cv-btn:hover {
-    box-shadow: 0 0 20px goldenrod;
+
+.name a {
     color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+
+.name a:hover {
+    color: goldenrod;
+}
+
+.links{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.links a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+
+.links a:visited{
+    color: white;
+}
+
+.links a:hover{
+    color: goldenrod;
+}
+
+.main-box{
+    display: flex;
+    background-color: black;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.img-flo img{
+    height:50%;
+    width: 50%;
+    border-radius: 50%;
+    margin: 15rem;
+    display: flex;
+    align-items: center;
     transition: 0.5s ease;
 }
 
-.text-effect {
-    position: relative;
+.img-flo img:hover{
+    transform: scale(1.05);
 }
 
-.text-effect span{
+.main-txt{
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-txt h1{
+    font-size: 6rem;
+}
+
+.main-txt h1 span{
+    font-size: 6rem;
     color: goldenrod;
-    font-size: 1.5rem;
-    font-weight: 500;
+    transition: color 0.5s ease;
 }
 
-.text-effect span::after{
+.main-txt h1 span:hover{
+    color: rgb(236, 203, 119);
+    cursor:default;
+}
+
+.main-txt h2{
+    font-size: 2rem;
+}
+
+.main-txt h2 span{
+    font-size: 2rem;
+    color: rgb(236, 203, 119);
+    transition: color 0.5s ease;
+}
+
+.main-txt h2 span:hover{
+    color: goldenrod;
+    cursor:default;
+}
+
+.main-txt h2::after{
     content: "|";
     background-color: black;
     position: absolute;
     animation: blink 1s infinite;
+    color: goldenrod;
 }
 
 @keyframes blink {
@@ -202,78 +166,87 @@ section{
     100% { opacity: 1; }
 }
 
-/*responsive*/
-@media screen and (max-width: 800px) {
-
-    main {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
-      
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-wrap: nowrap;
-        gap: 1rem;
-    }
-
-    nav.active {
-        display: flex;
-    }
-    nav a {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    nav a:hover, nav a.active {
-        border-bottom: 0.2rem solid goldenrod;
-        border-radius: 0.5rem;
-    }
-
-    .home-img{
-        display: none;
-    }
+.socials {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    gap: 2rem; /*fonctionne uniquement avec display flex*/
+    margin-top: 2rem;
 }
 
-@media screen and (max-width: 500px) {
-
-    nav{
-        display: none;
-    }
-    .home .home-content h1 {
-        font-size: 3rem;
-    }
-
-    .home .home-content h1 span {
-        font-size: 3rem;
-    }
-
-    .home .home-content h4 {
-        font-size: 1.2rem;
-    }
-
-    .social-icons a{
-        width: 1.5rem;
-        height: 1.5rem;
-        border: 0.8rem solid rgba(255, 255, 255, 0.815);
-    }
-    .social-icons img{
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    .cv-btn{
-        padding: 0.5rem 1rem; /*h/l*/
-        font-size: 0.8rem;
-    }
-    
+.socials a img{
+    width: 3rem;
+    height: 3rem;
 }
+
+.gitdin{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.github a, .github, .linkedin, .linkedin a {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.github a img, .linkedin a img{
+    width: 3rem;
+    height: 3rem;
+    transition: 0.5s ease;
+    border-radius: 50%;
+}
+
+.github a:hover img, .linkedin a:hover img{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 10px goldenrod;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-btn{
+    border: 1px solid white;
+    padding: 0.75rem 1rem;
+    border-radius: 50px;
+    transition: box-shadow 0.5s ease; /*dans le parent*/
+    transition: 0.5s ease;
+}
+
+.cv-btn:hover{
+    box-shadow: 0 0 20px goldenrod;
+    transform: scale(1.2);
+}
+
+/**main section**/
+
+/*!*/
+.about{
+    height: 100vh;
+    background-color: black;
+}
+
+.about .abt-title h1{
+    font-size: 8rem;
+    justify-content: center;
+    display: flex;
+    margin: 1rem 3rem;
+}
+
+.projects{
+    height:50vh;
+    background-color: black;
+}
+
+.projects .prj-title h1{
+    font-size: 8rem;
+    justify-content: center;
+    display: flex;
+    margin: 1rem 3rem;
+}
+
+
