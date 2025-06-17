@@ -229,7 +229,7 @@ a:visited{
     height: 50vh;
 }
 
-.about .abt-title h1{
+.about .abt-title h2{
     font-size: 8rem;
     justify-content: center;
     display: flex;
